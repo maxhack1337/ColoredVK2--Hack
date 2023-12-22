@@ -1,0 +1,174 @@
+//  
+//  ColoredVK.strings
+//  ColoredVK
+//  
+//  Created by Даниил on 08.04.2015.
+//  Copyright (©) Daniil Pashin 2015. All rights reserved.
+//  
+
+"NAVIGATION_BAR" = "Navigation bar";
+"TOOLBAR" = "Toolbar";
+"TABBAR" = "Tabbar";
+"MENU" = "Menu";
+"MESSAGES" = "Messages";
+"MESSAGES_LIST" = "Dialogs list";
+"GROUPS" = "Communities";
+"MISCELLANEOUS" = "Miscellaneous";
+"STATUS_BAR" = "Status bar";
+"SWITCH_COLORS" = "Switches";
+"AUDIO" = "Music";
+"AUDIO_PLAYER" = "Player";
+"FRIENDS" = "Friends";
+"VIDEOS" = "Video";
+"SETTINGS_MAIN_MENU" = "General settings menu";
+"SETTINGS_ADVANCED_MENU" = "Additional settings menu";
+"MAIN_SETTINGS" = "Settings (general)";
+"ADVANCED_SETTINGS" = "Settings (additional)";
+
+
+"CHANGE_COLORS" = "Change colors";
+"BACKGROUND_COLOR" = "Background color";
+"FOREGROUND_COLOR" = "Foreground color";
+"SELECTED_FOREGROUND_COLOR" = "Selected tab color";
+"BACKGROUND_TONE" = "Background tone";
+"TEXT_COLOR" = "Text color";
+"CHANGE_TEXT_COLOR" = "Change text color";
+"ENABLED_IMAGE" = "Use image instead";
+
+"CHANGE_BACKGROUND" = "Change background";
+"IMAGE_BLACKOUT" = "Image blackout";
+"SELECTION_STYLE" = "Selection style";
+"TRANSPARENT" = "Transparent";
+"SEMI_TRANSPARENT" = "Semi-transparent";
+"BLURRED" = "Blurred";
+"SEPARATOR_COLOR" = "Separators color";
+"HIDE_SEPARATORS" = "Hide separators";
+"HIDE_SEARCH" = "Hide search *";
+"VKAPP_RESTART_IS_NEEDED" = "* VK App restart is needed";
+"USE_CUSTOM_MESSAGE_UNREAD_COLOR" = "Change unread background";
+"CHANGE_MESSAGE_BUBBLE_TINT_COLOR" = "Change message color";
+"MESSAGE_BUBBLE_TINT_COLOR" = "Incoming";
+"MESSAGE_SENT_BUBBLE_TINT_COLOR" = "Sent";
+"TEXT_INPUT" = "Text input field";
+"CHANGE" = "Change";
+
+
+"BLUR_SETTINGS" = "Blur settings";
+"USE_BLUR" = "Enable blur";
+"BLUR_STYLE" = "Blur style";
+"BLUR_BACKGROUND" = "Blur background";
+
+
+"KEYBOARD_STYLE" = "Keyboard style";
+"DEFAULT" = "Default";
+"DARK" = "Dark";
+"LIGHT" = "Light";
+"ALWAYS_SHOW_NAVIGATION_BAR" = "Always show nav bar";
+"APP_CORNER_RADIUS" = "Corner radius";
+
+
+"NEW_DESIGN" = "New design";
+"ENABLE_PLAYER_GESTURES" = "Control with gestures";
+"HIDE_MESSAGE_NAV_BAR_ITEMS" = "Hide navigation bar items";
+"USE_PARALLAX" = "Enable parallax";
+
+"CUSTOM_COVER" = "Choose cover";
+"CACHE_COVERS" = "Cache covers";
+"CLEAR_CACHE" = "Clear cache";
+
+"COMMENT_SEPARATORS" = "Separators in comments";
+"DISABLE_GROUP_COVERS" = "Disable covers";
+
+"RESET_SETTINGS" = "Reset settings";
+"BACKUP_SETTINGS" = "Make settings backup";
+"RESTORE_SETTINGS" = "Restore settings from backup";
+"BACKUPS" = "Backups";
+"CHOOSE_BACKUP" = "Choose backup to restore";
+"NO_FILES_TO_RESTORE" = "No files to restore";
+
+
+"CHECK_UPDATES" = "Check updates";
+"CHECK_UPDATES_INTERVAL" = "Interval";
+"CHECK_NOW" = "Check now";
+"LAST_CHECK" = "Last check";
+"EVERY_DAY" = "Every day";
+"EVERY_WEEK" = "Every week";
+"EVERY_TWO_WEEKS" = "Every two weeks";
+"EVERY_MONTH" = "Every month";
+"SEND_STATISTICS" = "Send statistics";
+"SHOW_FAST_DOWNLOAD_BUTTON" = "Download image button";
+"SHOW_SECTION_IN_MENU" = "Show tab in menu";
+
+"QUICK_ACCESS_MENU" = "Quick access menu";
+"ENABLE_QUICK_ACCESS_MENU" = "Enable Quick Access menu";
+"ENABLE_QUICK_ACCESS_MENU_FORCE_TOUCH" = "Enable ForceTouch";
+"ENABLE_QUICK_ACCESS_MENU_LONG_PRESS" = "Enable long press";
+
+
+// About controller
+"SETTINGS" = "Settings";
+"DEVELOPER_IN_VK" = "Developer in VK";
+"UPDATES_SETTINGS" = "Updates settings";
+"USED_LIBRARIES" = "Used libraries";
+"LICENCE_AGREEMENT" = "License agreement";
+"PRIVACY_STATEMENT" = "Privacy statement";
+"AVAILABLE_IN_%@_AND_HIGHER" = "Available in VK App %@ and higher.";
+
+"CACHE_SIZE" = "Now cache is";
+
+
+
+"CHANGE_PASSWORD" = "Change password";
+"ENTER_ACCOUNT" = "Sign in";
+"TO_UNLOCK_FULL_VERSION" = "To unlock the full version";
+"ACCOUNT_STATUS" = "Account status";
+"ACCOUNT_PAID" = "Paid";
+"ACCOUNT_ACTIVATED" = "Activated";
+"NO_ACCOUNT_QUESTION" = "No account yet?";
+"REGISTER" = "Register";
+
+"THEME_STYLE" = "Theme style";
+"DISABLED" = "Disabled";
+"NIGHT_BLUE" = "Night blue";
+"DARK_NIGHT" = "Dark";
+"TRUE_NIGHT" = "Dark (OLED friendly)";
+"CUSTOM" = "Custom";
+
+"NAVIGATION" = "Navigation";
+"BUTTON_COLOR" = "Buttons color";
+"SELECTED_BUTTON_COLOR" = "Pressed button color";
+"SWITCH_THUMB_COLOR" = "Switch color (thumb)";
+"SWITCH_ON_COLOR" = "Switch background color (enabled)";
+
+"MAIN_BACKGROUND_COLOR" = "Main background color";
+"ADDITIONAL_BACKGROUND_COLOR" = "Additional background color";
+"LINK_TEXT_COLOR" = "Link text color";
+"DETAIL_TEXT_COLOR" = "Detail text color";
+
+"UNREAD_MESSAGE_COLOR" = "Unread color";
+"INCOMING_MESSAGE_COLOR" = "Outgoing color";
+"OUTGOING_MESSAGE_COLOR" = "Incoming color";
+
+
+/*
+ 
+ FOOTERS
+ 
+ */
+"MANAGE_SETTINGS_FOOTER" = "Backups are stored in %@. When you restore the device in iTunes they will be removed.";
+"CUSTOM_COVER_FOOTER" = "If you don't like ColoredVK 2 default cover, you can change it to yours.";
+"CACHE_COVERS_FOOTER" = "Caching of covers will help to reduce the load time, but will require more space on the device.";
+"NEW_PLAYER_DESIGN_FOOTER" = "This option will make the player more minimalist - player's cover will vary depending on the song, and the colors will be more readable. Also, a window with the song lyrics will be added. Just click the cover!\n\nDoes not work in VK App 3.0.2 and higher.";
+"PLAYER_GESTURES_FOOTER" = "Swipe down to close the player, swipe up - show playlist, swipe left/right - change the track.";
+"ALWAYS_SHOW_NAVIGATION_BAR_FOOTER" = "By default, VK App hides the navigation bar in the news when scrolling. This function disables this concealment.";
+"MESSAGE_BUBBLE_COLOR_FOOTER" = "This function changes the color of the message bubble.";
+"HIDE_MESSAGE_NAV_BAR_ITEMS_FOOTER" = "Will hide the person's name and avatar from the navigation bar. It would be very useful if you don't want others to see who you write.";
+"DISABLE_GROUP_COVERS_FOOTER" = "Disabling of covers gives an increase in speed and time of opening of groups.";
+
+"BLUR_PREFS_FOOTER" = "Blur will be applied to the navigation bar and toolbar (if any)";
+"SHOW_FAST_DOWNLOAD_BUTTON_FOOTER" = "If this feature is enabled, when viewing any image quick download button will be added in the navigation bar. It will allow you to quickly set an image without having to save it to Camera Roll.";
+"SHOW_SECTION_IN_MENU_FOOTER" = "ColoredVK 2 tab shows in the VKApp main menu by default. Turning this off, you will be able to go into the settings of the tweak only using settings of VKApp.";
+"CHANGE_MESSAGES_TEXT_COLOR_FOOTER" = "In general, this function should change the color of all text in messages. But at this moment it only changes the time label's color.";
+"ENABLE_QUICK_ACCESS_MENU_FOOTER" = "In VK App 4.9, the settings tab in the main menu was broken, so an alternative and more convenient solution was made. With this function, you can open the quick access menu to the main tweak settings by simply clicking on the tab bar. To change these settings, VK App requires a restart.";
+"ENABLE_QUICK_ACCESS_MENU_LONG_PRESS_FOOTER" = "To use a long press, press the tab bar twice and hold your finger for a second. After that, the quick access menu will open, where you can change some tweak options.";
+

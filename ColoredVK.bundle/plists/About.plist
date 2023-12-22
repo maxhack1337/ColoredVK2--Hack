@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>label</key>
+			<string>DEVELOPER_IN_VK</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>prefs/AuthorIcon</string>
+			<key>action</key>
+			<string>openDeveloperProfile</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>USED_LIBRARIES</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>showTextController:</string>
+			<key>icon</key>
+			<string>prefs/CopyrightIcon.png</string>
+			<key>fileName</key>
+			<string>Libraries</string>
+		</dict>
+		<dict>
+			<key>label</key>
+			<string>PRIVACY_STATEMENT</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>showTextController:</string>
+			<key>fileName</key>
+			<string>Confidence</string>
+			<key>icon</key>
+			<string>prefs/PrivacyIcon</string>
+			<key>localized</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

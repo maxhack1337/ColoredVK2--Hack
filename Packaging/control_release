@@ -1,0 +1,15 @@
+Package: com.daniilpashin.coloredvk2
+Name: ColoredVK 2
+Version: PACKAGE_VERSION
+Description: Tweak changes the design of the VK App for your taste
+Section: Tweaks
+Depends: firmware (>= 9.0), mobilesubstrate (>= 0.9.5000), preferenceloader, com.rpetrich.rocketbootstrap
+Architecture: iphoneos-arm
+Author: Daniil Pashin <daniilpashin@icloud.com>
+Maintainer: Daniil Pashin <daniilpashin@icloud.com>
+Icon: file:///Library/PreferenceBundles/ColoredVK2.bundle/Icon-big.png
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=coloredvk2Dp
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=coloredvk2Dp
+Tag: cydia::commercial, purpose::extension, compatible::ios9, compatible::ios10, compatible::ios11
+Conflicts: com.daniilpashin.coloredvk, com.daniilpashin.coloredvk2-beta
+Installed-Size: PACKAGE_SIZE

@@ -1,0 +1,25 @@
+//  
+//  Main.strings
+//  ColoredVK
+//  
+//  Created by Даниил on 08.04.2015.
+//  Copyright (©) Daniil Pashin 2015. All rights reserved.
+//  
+    
+
+"ENABLED" = "Включить";
+"NAVIGATION_TOOL_BAR" = "Бар навигации и тулбар";
+"MENU" = "Меню";
+"MESSAGES" = "Сообщения";
+"DIALOGS" = "Диалоги";
+"FRIENDS" = "Друзья";
+"GROUPS" = "Группы";
+"VIDEOS" = "Видео";
+"AUDIO" = "Музыка";
+"SETTINGS" = "Настройки";
+"MISCELLANEOUS" = "Разное";
+"NIGHT_THEME" = "Ночная тема";
+"MANAGE_SETTINGS" = "Управление настройками";
+"MANAGE_ACCOUNT" = "Управление аккаунтом";
+"TWEAK_PREFERENCES" = "Настройки твика";
+"ABOUT" = "О программе";

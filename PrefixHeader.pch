@@ -1,0 +1,116 @@
+//
+//  PrefixHeader.pch
+//  ColoredVK
+//
+//  Created by Даниил on 25.07.16.
+//
+//
+
+#import <Foundation/NSString.h>
+#import "ColoredVKFileSystem.h"
+
+#define CVKStringize_internal(string) #string
+#define CVKStringize(string) @CVKStringize_internal(string)
+
+#define CVKConcat_(a, b) a ## b
+#define CVKConcat(a, b) CVKConcat_(a, b)
+
+#define CVK_CONSTRUCTOR static __attribute__((constructor)) void CVKConcat(CVK, __LINE__)(void)
+#define CVK_INLINE inline __attribute__((always_inline))
+
+
+#define ios_available(version) @available(iOS version, *)
+
+#define CVKMainColor    [UIColor colorWithRed:90/255.0f green:130/255.0f blue:180/255.0f alpha:1.0f]
+#define CVKAltColor     [UIColor colorWithRed:65/255.0f green:125/255.0f blue:214/255.0f alpha:1.0f]
+
+#ifdef DEBUG
+#define CVKLog(format, ...)    NSLog((@"[COLOREDVK2] %@:%d %s " format), @(__FILE__).lastPathComponent, __LINE__, __FUNCTION__, ##__VA_ARGS__)
+#else
+#define CVKLog(...)
+#endif
+
+
+
+#define CVK_CRASH_PATH      [NSHomeDirectory() stringByAppendingString:@"/Library/Caches/Crash"]
+
+#ifdef  COMPILE_FOR_JAIL
+
+#define CVK_BUNDLE_PATH     @"/Library/PreferenceBundles/ColoredVK2.bundle"
+#define VKS_BUNDLE_PATH     @"/Library/PreferenceBundles/vksprefs.bundle"
+#define CVK_PREFS_PATH      @"/var/mobile/Library/Preferences/com.daniilpashin.coloredvk2.plist"
+#define CVK_LICENSE_PATH    @"/var/mobile/Library/Preferences/ru.danpashin.coloredvk2.license"
+#define CVK_FOLDER_PATH     @"/var/mobile/Library/Preferences/ColoredVK2"
+#define CVK_BACKUP_PATH     @"/var/mobile/Documents/ColoredVK2_Backups"
+
+#elif defined(COMPILE_APP) && (defined(__x86_64__) || defined(__i386__))
+
+#define CVK_BUNDLE_PATH     [NSBundle mainBundle].bundlePath
+#define CVK_PREFS_PATH      @"/var/mobile/Library/Preferences/com.daniilpashin.coloredvk2.plist"
+#define CVK_LICENSE_PATH    @"/var/mobile/Library/Preferences/ru.danpashin.coloredvk2.license"
+#define CVK_FOLDER_PATH     @"/var/mobile/Library/Preferences/ColoredVK2"
+#define CVK_BACKUP_PATH     @"/var/mobile/Documents/ColoredVK2_Backups"
+
+#else
+
+#define CVK_BUNDLE_PATH     [[NSBundle mainBundle] pathForResource: @"ColoredVK2" ofType: @"bundle"]
+#define VKS_BUNDLE_PATH     [[NSBundle mainBundle] pathForResource: @"vksprefs" ofType: @"bundle"]
+#define CVK_PREFS_PATH      [NSHomeDirectory() stringByAppendingPathComponent:@"/Library/Preferences/com.daniilpashin.coloredvk2.plist"]
+#define CVK_LICENSE_PATH    [NSHomeDirectory() stringByAppendingPathComponent:@"/Library/Preferences/ru.danpashin.coloredvk2.license"]
+#define CVK_FOLDER_PATH     [NSHomeDirectory() stringByAppendingString:@"/Documents/ColoredVK2"]
+#define CVK_BACKUP_PATH     [NSHomeDirectory() stringByAppendingString:@"/Documents/ColoredVK2_Backups"]
+
+#endif
+
+#if defined(COMPILE_APP) && (defined(__arm__) || defined(__arm64__))
+#undef  CVK_BUNDLE_PATH
+#define CVK_BUNDLE_PATH [NSBundle mainBundle].bundlePath
+#endif
+
+
+#define UIKitLocalizedString(key)             [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] localizedStringForKey:key value:@"" table:nil]
+#define CVKLocalizedStringFromTable(key, tbl) [[NSBundle bundleWithPath:CVK_BUNDLE_PATH] localizedStringForKey:(key) value:@"" table:tbl]
+#define CVKLocalizedString(key)               [[NSBundle bundleWithPath:CVK_BUNDLE_PATH] localizedStringForKey:(key) value:@"" table:nil]
+
+#define CVKImage(imgName) [UIImage imageNamed:imgName inBundle:[NSBundle bundleWithPath:CVK_BUNDLE_PATH] compatibleWithTraitCollection:nil]
+
+#define IS_IPAD                               (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define SYSTEM_VERSION_IS_LESS_THAN(version)  ([[UIDevice currentDevice].systemVersion compare:@#version options:NSNumericSearch] != NSOrderedDescending)
+#define SYSTEM_VERSION_IS_MORE_THAN(version)  ([[UIDevice currentDevice].systemVersion compare:@#version options:NSNumericSearch] != NSOrderedAscending)
+#define CLASS_NAME(obj)                       NSStringFromClass([obj class])
+
+
+NS_ASSUME_NONNULL_BEGIN
+static NSString *const kPackageIdentifier = @"ru.danpashin.coloredvk2";
+#define CVKPackageIdentifier kPackageIdentifier
+static NSString *const kPackageName = @"ColoredVK 2";
+static NSString *const kPackageVersion = CVKStringize(APP_VERSION);
+
+static NSString *const kPackageAPIURL = @"https://api.danpashin.ru/v1.2";
+static NSString *const kPackageDevVKLink = @"vk://vk.com/danpashin";
+static NSString *const kPackageDevLink = @"https://vk.com/danpashin";
+static NSString *const kPackageAccountRegisterLink = @"https://danpashin.ru/projects/coloredvk/index.html#register";
+static NSString *const kPackageFaqLink = @"https://danpashin.ru/projects/coloredvk/faq.html";
+static NSString *const kPackagePurchaseLink = @"https://danpashin.ru/projects/coloredvk/purchase/";
+
+
+static NSString *const kPackageNotificationReloadPrefs =         @"ru.danpashin.coloredvk2.prefs.reload";
+static NSString *const kPackageNotificationReloadPrefsMenu =     @"ru.danpashin.coloredvk2.prefsMenu.reload";
+static NSString *const kPackageNotificationReloadMenu =          @"ru.danpashin.coloredvk2.vkMenu.reload";
+static NSString *const kPackageNotificationUpdateNightTheme =    @"ru.danpashin.coloredvk2.nightTheme.reload";
+
+static NSString *const kPackageNotificationReloadInternalPrefs = @"ru.danpashin.coloredvk2.internalPrefs.reload";
+NS_ASSUME_NONNULL_END
+
+#define POST_NOTIFICATION(name) [[NSNotificationCenter defaultCenter] postNotificationName:name object:nil];
+#define POST_CORE_NOTIFICATION(name) CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(), (CFStringRef)name, NULL, NULL, YES)
+
+#define REGISTER_CORE_OBSERVER(observer, notifyName) CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), nil, observer, (CFStringRef)notifyName,   nil, CFNotificationSuspensionBehaviorDeliverImmediately)
+#define REGISTER_OBSERVER(observer, sel, notifyName) [[NSNotificationCenter defaultCenter] addObserver:observer selector:sel name:notifyName object:nil]
+
+
+#define NIGHT_THEME_DISABLE_CUSTOMISATION(view) objc_setAssociatedObject(view, "cvk_night_theme_should_customize", @NO, OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+#define NIGHT_THEME_SHOULD_CUSTOMIZE(view)      objc_getAssociatedObject(view, "cvk_night_theme_should_customize")
+
+
+#define RGB_COLOR(redVal, greenVal, blueVal) [UIColor colorWithRed:redVal/255.0f green:greenVal/255.0f blue:blueVal/255.0f alpha:1.0f]
